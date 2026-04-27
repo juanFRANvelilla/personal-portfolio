@@ -1,0 +1,429 @@
+:host {
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6650a4;
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 1260px) {
+    :host {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+#test-div p {
+    text-align: left;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 1260px) {
+    #test-div p {
+        color: #ffffff;
+    }
+}
+
+.header {
+    background-color: #ffffff;
+    align-items: center;
+    height: 60px;
+    display: flex;
+    justify-content: center; 
+    width: 95%; 
+    max-width: 700px;
+    margin: 0 auto; 
+    position: relative;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px;
+}
+
+.header .nav-links{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+
+.header .nav-links li{
+    display: inline-block;
+}
+
+.header .nav-links a{
+    font-size: 20px;
+    color: #6650a4;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+}
+
+
+
+.header .btn button {
+    font-size: 20px;
+    font-weight: 50px;
+    color: #6650a4; 
+    padding: 9px 25px;
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.download-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.download-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.header .btn button.active {
+    background-color: #6650a4; 
+    color: #ffffff; 
+}
+
+.section-display .btn button {
+    font-size: 20px;
+    font-weight: 50px;
+    color: #6650a4; 
+    padding: 9px 25px;
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.section-display .btn button:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    .header {
+        width: 80%; 
+        border-bottom-left-radius: 15px; 
+        border-bottom-right-radius: 15px; 
+        border-top-left-radius: 5px; 
+        border-top-right-radius: 5px;
+    }
+
+
+    .header .nav-links{
+        gap: 2%;
+        padding-left: 0px;
+    }
+
+    .header .nav-links a{
+        padding-left: 0px;
+    }
+
+    .header .btn button {
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+   
+}
+
+@media only screen and (max-width: 580px) {
+    .header {
+        width: 100%;
+        height: 50px; 
+        border-top-left-radius: 0px; 
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px; 
+        border-bottom-right-radius: 0px; 
+    }
+    
+    .header .nav-links{
+        gap: 30px;
+        
+    }
+
+    .header .btn button {
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+}
+
+@media only screen and (max-width: 388px) {
+    .header {
+        height: 60px; 
+    }
+    
+    .header .nav-links{
+        gap: 1px;
+    }
+    
+}
+
+
+
+
+
+
+
+.section {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    background-color: #6650a4;
+    border-radius: 10px;
+    max-width: 900px; 
+    padding: 25px 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.section-display {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+
+#link{  
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#link:visited{
+    color: #ffffff;
+}
+
+
+@media only screen and (min-width: 1260px) {
+
+    .header {
+        background-color: #6650a4;
+        align-items: center;
+        height: 60px;
+        display: flex;
+        justify-content: center; 
+        max-width: 900px;
+        margin: 0 auto; 
+        position: relative; 
+        border-bottom-left-radius: 15px; 
+        border-bottom-right-radius: 15px; 
+        border-top-left-radius: 0px; 
+        border-top-right-radius: 0px;
+    }
+
+    .header .nav-links{
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .header .nav-links li{
+        display: inline-block;
+    }
+    
+    .header .nav-links a{
+        font-size: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .header .btn button {
+        font-size: 20px;
+        font-weight: 50px;
+        color: #ffffff; 
+        padding: 8px 25px;
+        background-color: #6650a4; 
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .header .btn button.active {
+        background-color: #ffffff; 
+        color: #6650a4; 
+    }
+    
+    .header .btn button:hover {
+        transform: scale(1.1);
+    }
+
+    .section {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 120px;
+        background-color: #6650a4;
+        border-radius: 10px;
+        max-width: 900px; 
+        padding: 25px 0;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #info-div .section:last-of-type .section-display {
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+
+        /* Scroll horizontal más sutil */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.12);
+    }
+
+    #info-div .section:last-of-type .section-display::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    #info-div .section:last-of-type .section-display::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+    }
+
+    #info-div .section:last-of-type .section-display::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.35);
+        border-radius: 999px;
+    }
+
+    #info-div .section:last-of-type .section-display::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .section-display {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around; 
+        gap: 20px;
+        align-items: center; 
+        padding: 0 20px;
+    }
+
+    #link{  
+        color: #6650a4;
+        text-decoration: none;
+    }
+    
+    #link:visited{
+        color: #6650a4;
+    }
+
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: #6650a4; /* Morado por defecto según pidió */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+    width: 35px;
+    height: 35px;
+}
+
+.back-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.back-btn:hover {
+    transform: scale(1.1);
+}
+
+.debtapp-container h1,
+.debtapp-container h2,
+.debtapp-container h3,
+.debtapp-container p {
+    color: #ffffff !important;
+}
+
+@media only screen and (min-width: 1260px) {
+    .debtapp-container h1 {
+        color: #6650a4 !important;
+        position: fixed;
+        margin-left: 10px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+
+
+.section-item {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center;
+    align-items: center; 
+    max-width: 300px;
+    margin: 0 10px; 
+}
+
+#test-div .section-item:nth-child(1) {
+    max-width: 450px; 
+}
+
+.section h2 {
+    text-align: center; 
+}
+
+
+.section-item img {
+    width: 200px;
+    display: block;
+    border-radius: 15px;
+}
+
+.section-item p {
+    margin-top: 10px;
+}
