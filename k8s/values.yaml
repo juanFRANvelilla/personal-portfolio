@@ -1,7 +1,7 @@
 # Entorno pre / desarrollo — ajusta namespace, registry e ingress a tu cluster
 namespace: pre-jf-homepage-front
 replicaCount: 1
-registry: harbor.server.local/juanfran
+registry: harbor.server.local/danielbeltejar/jf-personal-portfolio
 image:
   pullPolicy: IfNotPresent
 service:
