@@ -1,0 +1,91 @@
+.podiotest-landing {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+
+.back-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.arch-card {
+  background: var(--card-bg, rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-color: var(--primary-color);
+}
+
+.arch-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.arch-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.arch-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.arch-card p {
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: 0.95rem;
+}

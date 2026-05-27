@@ -359,6 +359,62 @@
       </div>
     </div>
 
+    <!-- Proyecto 4: PodioTest -->
+    <div class="project-card">
+      <div class="project-img-placeholder">
+        <img
+          class="project-img project-img--light"
+          src="assets/projects/podiotest.png"
+          alt="Logotipo de PodioTest (modo día)"
+          loading="lazy"
+        />
+        <img
+          class="project-img project-img--dark"
+          src="assets/projects/podiotest.png"
+          alt="Logotipo de PodioTest (modo noche)"
+          loading="lazy"
+        />
+      </div>
+      <div class="project-info">
+        <h3>PodioTest</h3>
+        <p>Sistema de evaluación y ranking. Destacando por:</p>
+        <ul style="padding-left: 1rem; margin-top: 0.5rem; margin-bottom: 1rem; color: var(--text-color); font-size: 0.95rem;">
+          <li style="margin-bottom: 0.25rem;"><b>Arquitectura Monorepo:</b> Frontend (Angular 17 Standalone), Backend (Java 17/Spring Boot 3) y microservicios.</li>
+          <li style="margin-bottom: 0.25rem;"><b>Seguridad & Servicios:</b> Roles y permisos (RBAC) con Spring Security, y automatización de flujos de emails transaccionales con Resend.</li>
+          <li style="margin-bottom: 0.25rem;"><b>Rendimiento:</b> Redis Cache para lecturas eficientes de alta concurrencia en tablas de ranking.</li>
+        </ul>
+        <div class="project-links" style="align-items: flex-end;">
+          <!-- Columna Izquierda: Visitar y Landing -->
+          <div style="display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-start;">
+            <a
+              href="https://podiotest.com"
+              class="btn-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visitar
+            </a>
+            <a
+              href="https://podiotest.com/landing/"
+              class="btn-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Landing
+            </a>
+          </div>
+          <!-- Derecha: Arquitectura -->
+          <a
+            routerLink="/podiotest"
+            class="btn-link btn-link--secondary"
+            style="display: inline-flex; align-items: center; justify-content: center; border: 1px dashed var(--border-color); padding: 0.4rem 1rem; border-radius: 6px; transition: border-color 0.2s, background 0.2s;"
+          >
+            Arquitectura
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 

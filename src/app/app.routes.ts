@@ -8,5 +8,9 @@ export const routes: Routes = [
     {
         path: 'debtapp',
         loadComponent: () => import('./pages/debtapp/debtapp').then(m => m.Debtapp)
+    },
+    {
+        path: 'podiotest',
+        loadComponent: () => import('./pages/podiotest/podiotest').then(m => m.Podiotest)
     }
 ];
