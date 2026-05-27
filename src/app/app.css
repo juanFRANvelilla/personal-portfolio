@@ -225,7 +225,7 @@ h1, h2, h3, h4 {
 .hero-name {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #1e3a8a; /* Azul oscuro */
+  color: #2563eb; /* Azul más vibrante/claro */
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -248,7 +248,7 @@ h1, h2, h3, h4 {
 
 @keyframes blink-caret {
   0%, 100% { border-color: transparent; }
-  50% { border-color: #1e3a8a; }
+  50% { border-color: #2563eb; }
 }
 
 .hero-social-pills {
@@ -293,6 +293,45 @@ h1, h2, h3, h4 {
 @media (max-width: 900px) {
   .hero-content {
     max-width: 900px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 6rem 1.5rem 3rem 1.5rem;
+    min-height: auto;
+  }
+  
+  .hero-name {
+    font-size: 1.8rem;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .focus-title {
+    font-size: 1rem;
+  }
+
+  .focus-list li {
+    font-size: 0.95rem;
+  }
+  
+  .hero-social-pills {
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .social-pill {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
   }
 }
 

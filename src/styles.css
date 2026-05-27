@@ -10,8 +10,11 @@ body {
   --app-scrollbar-track: #000;
 }
 
-html[data-theme='dark'] {
-  --app-scrollbar-track: #000;
+html[data-theme='dark'],
+.dark-theme,
+html.dark-theme,
+body.dark-theme {
+  --app-scrollbar-track: #0b0f19;
 }
 
 /* Override para /debtapp */
@@ -34,6 +37,16 @@ html[data-shell='debtapp'][data-theme='dark'] {
 *::-webkit-scrollbar-track {
   background: var(--app-scrollbar-track) !important;
   border-radius: 10px;
+}
+
+html[data-theme='dark']::-webkit-scrollbar-track,
+body.dark-theme::-webkit-scrollbar-track {
+  background: #0b0f19 !important;
+}
+
+html[data-theme='light']::-webkit-scrollbar-track,
+body.light-theme::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
 }
 
 *::-webkit-scrollbar-thumb {
