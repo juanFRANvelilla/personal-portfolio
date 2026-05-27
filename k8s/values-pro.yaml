@@ -2,7 +2,7 @@
 namespace: pro-jf-homepage-front
 replicaCount: 2
 
-registry: harbor.server.local/juanfran/homepage
+registry: harbor.server.local/juanfran
 image:
   pullPolicy: IfNotPresent
 
