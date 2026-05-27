@@ -45,7 +45,7 @@ ingress:
     nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
     cert-manager.io/cluster-issuer: letsencrypt-ovh
   class: "nginx-local"
-  host: "homepage.pre.danielbeltejar.es"
+  host: "jf-homepage.pre.danielbeltejar.es"
   additionalHosts: []
   tls: true
   existingSecret: ""
