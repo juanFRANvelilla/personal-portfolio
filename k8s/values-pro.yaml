@@ -1,7 +1,7 @@
 # Producción — ajusta host, issuer y registry
 namespace: pro-jf-homepage-front
 replicaCount: 2
-registry: harbor.server.local/danielbeltejar/jf-personal-portfolio
+registry: harbor.server.local/danielbeltejar/personal-portfolio
 image:
   pullPolicy: IfNotPresent
 service:
