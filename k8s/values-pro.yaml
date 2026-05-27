@@ -12,7 +12,7 @@ extraEnv:
   - name: "TZ"
     value: "UTC"
   - name: "API_URL"
-    value: "https://homepage.juanfranciscoperez.es"
+    value: "https://juanfranciscoperez.es"
 extraEnvFrom: []
 resources:
   requests:
@@ -41,6 +41,6 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-set-header: X-Real-IP $remote_addr
     nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
   class: "nginx-online"
-  host: "homepage.juanfranciscoperez.es"
+  host: "juanfranciscoperez.es"
   tls: true
 
