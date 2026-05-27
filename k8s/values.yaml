@@ -1,21 +1,17 @@
-# Entorno pre / desarrollo
+# Entorno pre / desarrollo — ajusta namespace, registry e ingress a tu cluster
 namespace: pre-jf-homepage-front
 replicaCount: 1
-
 registry: harbor.server.local/juanfran
 image:
   pullPolicy: IfNotPresent
-
 service:
   type: ClusterIP
   port: 80
   targetPort: 8080
-
 extraEnv:
   - name: "TZ"
     value: "UTC"
 extraEnvFrom: []
-
 resources:
   requests:
     memory: "64Mi"
@@ -23,7 +19,6 @@ resources:
   limits:
     cpu: 500m
     memory: "256Mi"
-
 volumes:
   - name: tmpfs-var-lib-nginx-tmp
     emptyDir:
@@ -31,13 +26,11 @@ volumes:
   - name: tmpfs-run-nginx
     emptyDir:
       medium: Memory
-
 volumeMounts:
   - name: tmpfs-var-lib-nginx-tmp
     mountPath: /var/lib/nginx/tmp
   - name: tmpfs-run-nginx
     mountPath: /run/nginx
-
 ingress:
   enabled: true
   annotations:
@@ -46,7 +39,5 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-ovh
   class: "nginx-local"
   host: "jf-homepage.pre.danielbeltejar.es"
-  additionalHosts: []
   tls: true
-  existingSecret: ""
 

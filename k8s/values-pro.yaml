@@ -1,21 +1,19 @@
-# Producción
+# Producción — ajusta host, issuer y registry
 namespace: pro-jf-homepage-front
 replicaCount: 2
-
 registry: harbor.server.local/danielbeltejar/jf-homepage-front
 image:
   pullPolicy: IfNotPresent
-
 service:
   type: ClusterIP
   port: 80
   targetPort: 8080
-
 extraEnv:
   - name: "TZ"
     value: "UTC"
+  - name: "API_URL"
+    value: "https://homepage.juanfranciscoperez.es"
 extraEnvFrom: []
-
 resources:
   requests:
     memory: "64Mi"
@@ -23,7 +21,6 @@ resources:
   limits:
     cpu: 500m
     memory: "256Mi"
-
 volumes:
   - name: tmpfs-var-lib-nginx-tmp
     emptyDir:
@@ -31,13 +28,11 @@ volumes:
   - name: tmpfs-run-nginx
     emptyDir:
       medium: Memory
-
 volumeMounts:
   - name: tmpfs-var-lib-nginx-tmp
     mountPath: /var/lib/nginx/tmp
   - name: tmpfs-run-nginx
     mountPath: /run/nginx
-
 ingress:
   enabled: true
   annotations:
@@ -47,7 +42,5 @@ ingress:
     nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
   class: "nginx-online"
   host: "homepage.juanfranciscoperez.es"
-  additionalHosts: []
   tls: true
-  existingSecret: ""
 
