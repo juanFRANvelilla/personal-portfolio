@@ -1,0 +1,186 @@
+/* Container for top of experience card to align title and company website link */
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-company-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  transition: all 0.2s ease;
+}
+
+.timeline-company-link:hover {
+  background: rgba(59, 130, 246, 0.16);
+  border-color: var(--accent-color);
+  transform: translateY(-1px);
+}
+
+.timeline-date-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-container.light-theme .timeline-date-badge {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Bullet list styling */
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeline-bullet-item {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.timeline-bullet-item::before {
+  content: '•';
+  position: absolute;
+  left: 0.25rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Clickable links inside bullet list items */
+.timeline-bullet-item a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.timeline-bullet-item a:hover {
+  color: var(--accent-hover);
+  text-decoration-style: solid;
+}
+
+.timeline-bullet-item a::after {
+  content: ' ↗';
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.timeline-bullet-item a:hover::after {
+  transform: translate(1px, -1px);
+}
+
+/* Badges section */
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--accent-color);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.portfolio-container.light-theme .tech-tag {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.portfolio-container.light-theme .tech-tag:hover {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+/* Highlight/Milestone badge */
+.milestone-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  color: #fff;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+}
+
+.milestone-tag--migration {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.milestone-tag--devops {
+  background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+  box-shadow: 0 2px 4px rgba(236, 72, 153, 0.2);
+}
+
+/* Enhancing timeline items visually */
+.timeline-content {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-content:hover::after {
+  background-color: var(--accent-color);
+}
