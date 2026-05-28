@@ -354,35 +354,6 @@ h1, h2, h3, h4 {
     padding: 0.5rem 1rem;
   }
 
-  /* Spacing in timeline (Experience) on mobile */
-  .timeline-section {
-    padding: 4rem 1rem;
-  }
-
-  .timeline {
-    padding-left: 1rem;
-  }
-
-  .timeline::before {
-    left: 5px;
-  }
-
-  .timeline-item {
-    padding-left: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .timeline-dot {
-    width: 12px;
-    height: 12px;
-    left: -1rem;
-    top: 0.4rem;
-  }
-
-  .timeline-content {
-    padding: 1.2rem;
-  }
-
   /* Disable hover translations and shadows on mobile */
   .social-pill:hover,
   .timeline-company-link:hover,
@@ -519,6 +490,35 @@ h1, h2, h3, h4 {
 .timeline-content p {
   color: var(--text-secondary);
   font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .timeline-section {
+    padding: 4rem 0.75rem;
+  }
+
+  .timeline {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-content {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 /* =========================================
