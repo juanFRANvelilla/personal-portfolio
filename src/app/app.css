@@ -203,6 +203,14 @@ h1, h2, h3, h4 {
   color: var(--text-secondary);
 }
 
+.focus-list li:first-child {
+  align-items: center;
+}
+
+.focus-list li:first-child .check-icon {
+  margin-top: 0;
+}
+
 .focus-text {
   flex: 1 1 auto;
   min-width: 0;
