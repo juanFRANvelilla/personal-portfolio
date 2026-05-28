@@ -203,6 +203,11 @@ h1, h2, h3, h4 {
   color: var(--text-secondary);
 }
 
+.focus-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .focus-list strong {
   color: var(--text-primary);
   font-weight: 600;
