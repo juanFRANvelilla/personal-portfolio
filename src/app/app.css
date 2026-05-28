@@ -226,7 +226,7 @@ h1, h2, h3, h4 {
   font-size: 2.5rem;
   font-weight: 800;
   color: #2563eb; /* Azul más vibrante/claro */
-  display: inline-block;
+  display: block;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid transparent;
@@ -301,27 +301,43 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 600px) {
+  .theme-switch-wrapper {
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+
   .hero {
     padding: 6rem 1.5rem 3rem 1.5rem;
     min-height: auto;
   }
   
+  .hero-name-container {
+    margin-bottom: 1.5rem;
+  }
+
   .hero-name {
     font-size: 1.8rem;
   }
   
   .hero-title {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    line-height: 1.4;
+    margin-bottom: 2.5rem;
   }
   
   .hero-intro p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
   }
 
   .focus-title {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .focus-list {
+    gap: 1.5rem;
   }
 
   .focus-list li {
@@ -336,6 +352,49 @@ h1, h2, h3, h4 {
   .social-pill {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
+  }
+
+  /* Spacing in timeline (Experience) on mobile */
+  .timeline-section {
+    padding: 4rem 1rem;
+  }
+
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline::before {
+    left: 5px;
+  }
+
+  .timeline-item {
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+    left: -1rem;
+    top: 0.4rem;
+  }
+
+  .timeline-content {
+    padding: 1.2rem;
+  }
+
+  /* Disable hover translations and shadows on mobile */
+  .social-pill:hover,
+  .timeline-company-link:hover,
+  .timeline-content:hover,
+  .project-card:hover,
+  .btn-primary:hover,
+  .btn-link--icon:hover,
+  .btn-link--direct:hover,
+  .tech-tag:hover,
+  .arch-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
   }
 }
 

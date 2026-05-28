@@ -83,6 +83,12 @@ import { ThemeService } from '../../core/services/theme.service';
           inset -3px -2px 5px -2px #8983f7,
           inset -10px -4px 0 0 #a3dafb;
       }
+
+      @media (max-width: 600px) {
+        .switch {
+          font-size: 11px;
+        }
+      }
     `,
   ],
 })
