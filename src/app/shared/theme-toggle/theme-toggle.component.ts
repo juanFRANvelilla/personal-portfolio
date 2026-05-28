@@ -80,13 +80,15 @@ import { ThemeService } from '../../core/services/theme.service';
         background: #303136;
         /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
         box-shadow:
-          inset -3px -2px 5px -2px #8983f7,
-          inset -10px -4px 0 0 #a3dafb;
+          inset -0.22em -0.14em 0.36em -0.14em #8983f7,
+          inset -0.72em -0.28em 0 0 #a3dafb;
       }
 
       @media (max-width: 600px) {
         .switch {
-          font-size: 11px;
+          font-size: 12px;
+          --size-of-icon: 1.3em;
+          --slider-offset: 0.25em;
         }
       }
     `,
