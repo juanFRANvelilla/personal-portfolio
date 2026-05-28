@@ -253,7 +253,7 @@
 
 <!-- Portafolio / Proyectos -->
 <section id="proyectos" class="portfolio-section">
-  <h2 class="section-title">Portafolio</h2>
+  <h2 class="section-title">Portfolio</h2>
   <div class="projects-grid">
     
     <!-- Proyecto 1: PodioTest -->
@@ -284,23 +284,29 @@
           <span class="tech-tag">Orquestación de Agentes</span>
         </div>
         <div class="project-links" style="align-items: flex-end;">
-          <!-- Columna Izquierda: Visitar y Landing -->
+          <!-- Columna Izquierda: Landing y Visitar -->
           <div style="display: flex; flex-direction: column; gap: 0.8rem; align-items: flex-start;">
             <a
-              href="https://podiotest.com"
-              class="btn-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Visitar
-            </a>
-            <a
               href="https://podiotest.com/landing/"
-              class="btn-link"
+              class="btn-link--direct"
               target="_blank"
               rel="noopener noreferrer"
             >
               Landing
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+            <a
+              href="https://podiotest.com"
+              class="btn-link--direct"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visitar
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
             </a>
           </div>
           <!-- Derecha: Arquitectura -->
@@ -335,18 +341,22 @@
         <h3>ZGZ Emergency Map</h3>
         <p>Mapa de emergencias diarias.</p>
         <div class="badges-container" style="margin-bottom: 1.2rem;">
+          <span class="tech-tag">Angular 18</span>
           <span class="tech-tag">SpringBoot</span>
           <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">JS</span>
+          <span class="tech-tag">JUnit 5 & Mockito</span>
         </div>
         <div class="project-links">
           <a
             href="https://zgz-emergency-map.juanfranciscoperez.es"
-            class="btn-link"
+            class="btn-link--direct"
             target="_blank"
             rel="noopener noreferrer"
           >
             Visitar
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
           </a>
           <a
             class="btn-link btn-link--icon"
@@ -387,17 +397,22 @@
         <h3>StateStats</h3>
         <p>Mapa interactivo de Estados Unidos con datos demográficos.</p>
         <div class="badges-container" style="margin-bottom: 1.2rem;">
-          <span class="tech-tag">Angular</span>
+          <span class="tech-tag">Angular 18</span>
           <span class="tech-tag">OpenLayers</span>
+          <span class="tech-tag">Turf.js</span>
+          <span class="tech-tag">Persistencia LocalStorage</span>
         </div>
         <div class="project-links">
           <a
             href="https://statestats.juanfranciscoperez.es"
-            class="btn-link"
+            class="btn-link--direct"
             target="_blank"
             rel="noopener noreferrer"
           >
             Visitar
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
           </a>
           <a
             class="btn-link btn-link--icon"
@@ -443,7 +458,12 @@
           <span class="tech-tag">PostgreSQL</span>
         </div>
         <div class="project-links">
-          <a routerLink="/debtapp" class="btn-link">Visitar</a>
+          <a routerLink="/debtapp" class="btn-link--direct">
+            Visitar
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
+          </a>
           <a
             class="btn-link btn-link--icon"
             href="https://github.com/juanFRANvelilla/appDebtApp"

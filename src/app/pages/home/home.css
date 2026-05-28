@@ -26,12 +26,14 @@
   background: rgba(59, 130, 246, 0.08);
   border: 1px solid rgba(59, 130, 246, 0.15);
   transition: all 0.2s ease;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 .timeline-company-link:hover {
   background: rgba(59, 130, 246, 0.16);
   border-color: var(--accent-color);
-  transform: translateY(-1px);
+  transform: translate3d(0, -1px, 0);
 }
 
 .timeline-date-badge {
