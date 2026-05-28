@@ -17,9 +17,18 @@ export class App {
 
   constructor() {
     this.applyShellAttr(this.router.url);
+    this.scrollToTop();
     this.router.events
       .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
-      .subscribe((e) => this.applyShellAttr(e.urlAfterRedirects));
+      .subscribe((e) => {
+        this.applyShellAttr(e.urlAfterRedirects);
+        this.scrollToTop();
+      });
+  }
+
+  private scrollToTop() {
+    if (typeof window === 'undefined') return;
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }
 
   private applyShellAttr(url: string) {
