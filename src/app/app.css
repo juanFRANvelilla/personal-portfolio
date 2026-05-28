@@ -526,7 +526,7 @@ h1, h2, h3, h4 {
 }
 
 .project-img-placeholder--state-stats img {
-  object-position: center top;
+  object-position: left top;
 }
 
 .project-img {
