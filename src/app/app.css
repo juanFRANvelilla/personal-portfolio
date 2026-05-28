@@ -271,13 +271,16 @@ h1, h2, h3, h4 {
   font-weight: 500;
   font-size: 0.95rem;
   transition: all 0.3s ease;
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 .social-pill:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--accent-color);
-  transform: translateY(-2px);
-  color: var(--text-primary);
+  transform: translate3d(0, -2px, 0);
+  color: var(--accent-color);
 }
 
 .portfolio-container.light-theme .social-pill {
@@ -288,6 +291,7 @@ h1, h2, h3, h4 {
 .portfolio-container.light-theme .social-pill:hover {
   background: rgba(0, 0, 0, 0.08);
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 @media (max-width: 900px) {
