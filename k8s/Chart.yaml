@@ -1,6 +1,6 @@
 apiVersion: v2
 name: homepage
-description: Helm chart for personal-portfolio (Angular SPA + nginx)
+description: Helm chart for personal-portfolio (Angular SPA + Gateway API)
 
 type: application
 

@@ -1,4 +1,4 @@
-# Entorno pre / desarrollo — ajusta namespace, registry e ingress a tu cluster
+# Entorno pre / desarrollo — ajusta namespace, registry y Gateway API a tu cluster
 namespace: pre-jf-homepage-front
 replicaCount: 1
 registry: harbor.server.local/danielbeltejar/personal-portfolio
@@ -31,13 +31,15 @@ volumeMounts:
     mountPath: /var/lib/nginx/tmp
   - name: tmpfs-run-nginx
     mountPath: /run/nginx
-ingress:
+gatewayRoute:
   enabled: true
-  annotations:
-    nginx.ingress.kubernetes.io/proxy-set-header: X-Real-IP $remote_addr
-    nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
-    cert-manager.io/cluster-issuer: letsencrypt-ovh
-  class: "nginx-local"
   host: "jf-homepage.pre.danielbeltejar.es"
-  tls: true
+  additionalHosts: []
+  path: "/"
+
+gateway:
+  enabled: true
+  name: cilium-local
+  namespace: gateway-system
+  sectionName: https-jf-homepage-pre
 
