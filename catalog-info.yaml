@@ -1,0 +1,36 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: personal-portfolio
+  description: Juan Francisco Perez personal portfolio
+  annotations:
+    github.com/project-slug: juanFRANvelilla/personal-portfolio
+    backstage.io/source-location: url:https://github.com/juanFRANvelilla/personal-portfolio
+    delicias.dev/managed-by: backstage
+    delicias.dev/workload-kind: application
+    delicias.dev/application-contract: platform.delicias/v1alpha2
+    delicias.dev/delivery-chart: common-app@1.1.0
+spec:
+  owner: user:danielbeltejar
+  lifecycle: production
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: personal-portfolio-homepage
+  description: Personal portfolio website
+  annotations:
+    github.com/project-slug: juanFRANvelilla/personal-portfolio
+    backstage.io/source-location: url:https://github.com/juanFRANvelilla/personal-portfolio
+    tekton.dev/pipeline: universal-monorepo
+    backstage.io/kubernetes-id: homepage
+    backstage.io/kubernetes-namespace: pre-jf-homepage-front
+    delicias.dev/managed-by: backstage
+    delicias.dev/application-contract: platform.delicias/v1alpha2
+    delicias.dev/deploy-kind: service
+    delicias.dev/delivery-chart: common-app@1.1.0
+spec:
+  type: website
+  owner: user:danielbeltejar
+  lifecycle: production
+  system: personal-portfolio
